@@ -1,0 +1,24 @@
+<div class="container">
+    <div><strong>{{post.category | uppercase}}</strong>&nbsp;&nbsp; -&nbsp;
+        <strong>Product Id :</strong>{{ post.id }}
+    </div>
+    <div>
+        <strong>Rating:</strong>
+        <p>{{ post.rating.rate }}</p>
+    </div>
+   
+    <div>
+        <strong>Title:</strong>
+        <p>{{ post.title }}</p>
+    </div>
+   
+    <div>
+        <strong>Description:</strong>
+        <p>{{ post.description }}</p>
+    </div>
+    <div>
+        <strong>Product Image</strong>
+        <p><img src="{{post.image}}" height="auto" width='50'/></p>
+    </div>
+    <a href="#" routerLink="/post/index" class="btn btn-primary">Back</a>
+</div>
